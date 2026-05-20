@@ -139,9 +139,12 @@ export default function Slide2() {
               className="w-full flex items-center justify-center"
             >
               <div className="relative w-full max-w-xl lg:max-w-2xl mx-auto" style={{ aspectRatio: '1/1' }}>
-                {/* Connection lines (decorative) — centered via translate, same as Eureka */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 rounded-full border border-cyan-500/10" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 sm:w-80 sm:h-80 lg:w-[22rem] lg:h-[22rem] rounded-full border border-dashed border-white/5" />
+                {/* Outer orbital ring — matches satellite orbit at radius 40% (80% diameter) */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full border border-dashed border-cyan-500/15" />
+                {/* Inner orbital ring */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] h-[55%] rounded-full border border-cyan-500/10" />
+                {/* Center dot */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-cyan-400/40" />
 
                 {/* Central Eureka node */}
                 <motion.div
