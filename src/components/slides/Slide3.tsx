@@ -43,7 +43,6 @@ export default function Slide3() {
   ];
 
   const stepLabels = ['Servicios Core', 'Servicios Perifericos'];
-  const stepColors = ['text-cyan-400', 'text-slate-400'];
 
   return (
     <div className="w-full h-full bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 lg:px-20 py-4 sm:py-6">

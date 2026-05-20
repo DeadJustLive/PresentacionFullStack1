@@ -148,10 +148,10 @@ export default function Slide2() {
 
                 {/* Central Eureka node */}
                 <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
+                  initial={{ scale: 0, x: "-50%", y: "-50%" }}
+                  animate={{ scale: 1, x: "-50%", y: "-50%" }}
                   transition={{ duration: 0.5, type: 'spring' }}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-cyan-500/10 border-2 border-cyan-500/50 flex flex-col items-center justify-center shadow-[0_0_50px_rgba(6,182,212,0.2)]"
+                  className="absolute top-1/2 left-1/2 z-10 w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-cyan-500/10 border-2 border-cyan-500/50 flex flex-col items-center justify-center shadow-[0_0_50px_rgba(6,182,212,0.2)]"
                 >
                   <Server className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-cyan-400" />
                   <span className="text-xs sm:text-sm lg:text-base font-bold text-cyan-400 mt-1">EUREKA</span>
@@ -167,11 +167,11 @@ export default function Slide2() {
                   return (
                     <motion.div
                       key={svc.name}
-                      initial={{ opacity: 0, scale: 0.5 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      initial={{ opacity: 0, scale: 0.5, x: "-50%", y: "-50%" }}
+                      animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
                       transition={{ delay: 0.3 + i * 0.06, duration: 0.4 }}
                       className="absolute z-5"
-                      style={{ left: `${x}%`, top: `${y}%`, transform: 'translate(-50%, -50%)' }}
+                      style={{ left: `${x}%`, top: `${y}%` }}
                     >
                       <div className={`${svc.bg} border ${svc.border} rounded-lg px-2.5 py-1.5 sm:px-4 sm:py-2 lg:px-5 lg:py-2.5 flex items-center gap-1.5 sm:gap-2 shadow-lg backdrop-blur-sm`}>
                         <Cpu className={`w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 lg:w-5.5 lg:h-5.5 ${svc.color}`} />
