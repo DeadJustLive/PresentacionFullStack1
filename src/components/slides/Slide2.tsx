@@ -136,9 +136,9 @@ export default function Slide2() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.4 }}
-              className="w-full flex items-center justify-center"
+              className="flex items-center justify-center w-full"
             >
-              <div className="relative w-full max-w-xl lg:max-w-2xl mx-auto" style={{ aspectRatio: '1/1' }}>
+              <div className="relative w-full max-w-[min(70vh,42rem)] aspect-square">
                 {/* Outer orbital ring — matches satellite orbit at radius 40% (80% diameter) */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full border border-dashed border-cyan-500/15" />
                 {/* Inner orbital ring */}
