@@ -70,27 +70,27 @@ export default function Slide2() {
   const stepLabels = ['Topologia', 'Conceptos Clave'];
 
   return (
-    <div className="w-full h-full bg-gradient-to-br from-slate-950 via-blue-950/10 to-slate-950 flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-12 lg:px-20 py-4 sm:py-6">
+    <div className="w-full h-full bg-gradient-to-br from-slate-950 via-blue-950/10 to-slate-950 flex flex-col items-center text-center px-4 sm:px-6 md:px-12 lg:px-20 py-2 sm:py-3">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mb-3 sm:mb-4 flex-shrink-0 flex flex-col items-center"
+        className="flex-shrink-0 flex flex-col items-center"
       >
-        <div className="flex items-center gap-2 sm:gap-3 mb-2">
+        <div className="flex items-center gap-2 sm:gap-3 mb-1 sm:mb-2">
           <div className="h-1 w-6 sm:w-8 lg:w-12 bg-blue-500" />
           <span className="text-blue-400 uppercase tracking-wider text-[10px] sm:text-xs lg:text-sm font-medium">Arquitectura</span>
           <div className="h-1 w-6 sm:w-8 lg:w-12 bg-blue-500" />
         </div>
-        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">Arquitectura General</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white mb-1">Arquitectura General</h2>
         <p className="text-xs sm:text-sm lg:text-base text-slate-400 max-w-3xl">
           11 microservicios coordinados mediante Eureka para service discovery.
         </p>
       </motion.div>
 
       {/* Step indicator */}
-      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-5">
+      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-2 sm:mb-3">
         {stepLabels.map((label, i) => (
           <button
             key={label}
